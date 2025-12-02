@@ -1,0 +1,62 @@
+{
+  "agent": {
+    "name": "GapAssessmentAgent",
+    "description": "Agent for automated gap assessment in tax technology and compliance digitization",
+    "llm": {
+      "provider": "google_gemini",
+      "api_key": "AIzaSyDYhRWE9ONcGVxULae-4Rc8Q7kFge6mo20",
+      "model": "gemini-2.0-flash",
+      "temperature": 0.7,
+      "max_tokens": 8192
+    },
+    "embeddings": {
+      "provider": "sentence_transformers",
+      "model": "all-mpnet-base-v2"
+    },
+    "instructions": "You are an expert gap assessment agent specializing in tax technology and compliance digitization maturity assessment. Your role is to:\n1. Extract and analyze company data from public sources\n2. Compare against industry benchmarks (Big 4 audit firms)\n3. Identify gaps in tax technology, compliance, and digitization\n4. Provide actionable recommendations with risk scores (1-10 scale)\n5. Ensure all responses are grounded and relevant (score > 3/5)"
+  },
+  "extraction": {
+    "biweekly_interval_days": 14,
+    "max_data_size_mb_per_source": 20,
+    "force_refresh": false,
+    "chunk_size": 1000,
+    "chunk_overlap": 200,
+    "token_encoding": "gpt2",
+    "browser_use_api_key": "bu_tKgJM0JXS246sdkB4nsiQDd84PN2LJ1SmLlUun0g9Js"
+  },
+  "vector_db": {
+    "type": "pinecone",
+    "api_key": "pcsk_6S93wT_4ZAXn8iava2BocLLPEASd6LYvmFHENhuGZjfGHyQLk93qhpSb3qAXT38KV8ezap",
+    "dimension": 768,
+    "similarity_metric": "cosine",
+    "environment": "us-east-1"
+  },
+  "rag": {
+    "parallel_search": true,
+    "top_k_results": 5,
+    "min_groundedness_score": 3,
+    "min_relevance_score": 3,
+    "score_scale": {
+      "groundedness": "1-5",
+      "relevance": "1-5",
+      "risk": "1-10"
+    },
+    "similarity_threshold": 0.5,
+    "use_llm_scoring": true,
+    "max_llm_scored_results": 5,
+    "skip_comparison_for_low_scores": true,
+    "max_comparisons": 5
+  },
+  "logging": {
+    "enabled": true,
+    "log_file": "logs/gap_assessment_agent.log",
+    "log_level": "INFO",
+    "track_index_usage": true,
+    "track_comparisons": true
+  },
+  "companies": {
+    "primary": "bp",
+    "benchmark_companies": ["kpmg", "ey", "deloitte", "pwc"]
+  }
+}
+

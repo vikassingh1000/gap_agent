@@ -1,0 +1,80 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Vector DB Indexes
+vector_db_indexes/
+*.index
+*.metadata
+
+# Downloads
+downloads/
+
+# Logs
+logs/
+*.log
+
+# Configuration (if contains secrets)
+# config/extraction_dates.json
+config/agent_config.json
+config/company_config.json
+gap_assessment_result.json
+gap_assessment_optimized_result.json
+gap_assessment_search_results.json
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test outputs
+test_results/
+*.json.bak
+
+# Playwright
+.playwright/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Pytest
+.pytest_cache/
+

@@ -1,0 +1,134 @@
+{
+  "companies": {
+    "bp": {
+      "name": "British Petroleum",
+      "base_url": "https://www.bp.com",
+      "target_urls": {
+        "strategy_page": "https://www.bp.com/en/global/corporate/what-we-do/our-strategy.html",
+        "sustainability": "https://www.bp.com/en/global/corporate/sustainability.html",
+        "main": "https://www.bp.com"
+      },
+      "search_keywords": [
+        "tax technology",
+        "tax modernization",
+        "digitization",
+        "digital transformation",
+        "compliance",
+        "SOX",
+        "Sarbanes-Oxley",
+        "regulatory compliance",
+        "financial controls",
+        "audit",
+        "data governance",
+        "risk management",
+        "technology investment",
+        "strategic initiatives"
+      ],
+      "data_points": {
+        "strategic_pillars": {
+          "selectors": ["h1", "h2", "h3", ".strategy", ".initiative", ".pillar"],
+          "keywords": ["strategy", "initiative", "pillar", "goal", "objective", "target"]
+        },
+        "technology_investment": {
+          "selectors": ["p", "div", "section", ".technology", ".investment"],
+          "keywords": ["technology", "digital", "automation", "AI", "machine learning", "cloud", "software", "system"]
+        },
+        "compliance_frameworks": {
+          "selectors": ["p", "div", "section", ".compliance", ".framework"],
+          "keywords": ["compliance", "SOX", "Sarbanes-Oxley", "regulatory", "framework", "standard", "regulation"]
+        },
+        "digitization_goals": {
+          "selectors": ["p", "div", "section", ".digitization", ".digital"],
+          "keywords": ["digitization", "digital", "paperless", "automation", "digital transformation", "digitalization"]
+        },
+        "risk_management": {
+          "selectors": ["p", "div", "section", ".risk", ".management"],
+          "keywords": ["risk", "risk management", "risk assessment", "controls", "mitigation"]
+        },
+        "data_governance": {
+          "selectors": ["p", "div", "section", ".governance", ".data"],
+          "keywords": ["data governance", "data management", "data quality", "data integrity", "data security"]
+        },
+        "audit_controls": {
+          "selectors": ["p", "div", "section", ".audit", ".control"],
+          "keywords": ["audit", "internal control", "financial control", "audit trail", "compliance audit"]
+        }
+      },
+      "document_types": ["pdf", "docx", "xlsx", "csv"],
+      "download_directory": "downloads/bp"
+    },
+    "kpmg": {
+      "name": "KPMG",
+      "base_url": "https://kpmg.com",
+      "target_urls": {
+        "tax": "https://kpmg.com/us/en/services/tax.html",
+        "technology": "https://kpmg.com/us/en/services/advisory/technology.html",
+        "main": "https://kpmg.com"
+      },
+      "search_keywords": [
+        "tax technology",
+        "tax transformation",
+        "compliance",
+        "digitization"
+      ],
+      "data_points": {},
+      "document_types": ["pdf", "docx"],
+      "download_directory": "downloads/kpmg"
+    },
+    "ey": {
+      "name": "EY",
+      "base_url": "https://www.ey.com",
+      "target_urls": {
+        "tax": "https://www.ey.com/en_us/tax",
+        "technology": "https://www.ey.com/en_us/technology",
+        "main": "https://www.ey.com"
+      },
+      "search_keywords": [
+        "tax technology",
+        "tax transformation",
+        "compliance",
+        "digitization"
+      ],
+      "data_points": {},
+      "document_types": ["pdf", "docx"],
+      "download_directory": "downloads/ey"
+    },
+    "deloitte": {
+      "name": "Deloitte",
+      "base_url": "https://www2.deloitte.com",
+      "target_urls": {
+        "tax": "https://www2.deloitte.com/us/en/pages/tax/solutions/tax-technology.html",
+        "technology": "https://www2.deloitte.com/us/en/pages/technology/solutions.html",
+        "main": "https://www2.deloitte.com"
+      },
+      "search_keywords": [
+        "tax technology",
+        "tax transformation",
+        "compliance",
+        "digitization"
+      ],
+      "data_points": {},
+      "document_types": ["pdf", "docx"],
+      "download_directory": "downloads/deloitte"
+    },
+    "pwc": {
+      "name": "PWC",
+      "base_url": "https://www.pwc.com",
+      "target_urls": {
+        "tax": "https://www.pwc.com/us/en/services/tax.html",
+        "technology": "https://www.pwc.com/us/en/services/technology.html",
+        "main": "https://www.pwc.com"
+      },
+      "search_keywords": [
+        "tax technology",
+        "tax transformation",
+        "compliance",
+        "digitization"
+      ],
+      "data_points": {},
+      "document_types": ["pdf", "docx"],
+      "download_directory": "downloads/pwc"
+    }
+  }
+}
+
